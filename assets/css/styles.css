@@ -1,0 +1,200 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #2a2929;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    width: 80vw;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: "Playfair Display", serif;
+}
+
+.header {
+    padding: 20px 0;
+}
+
+.header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a { 
+    font-family: "Playfair Display", serif;
+    font-size: 4.2rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    background-clip: text;
+    background: linear-gradient(15deg in oklch, oklch(83.46% 0.1433 189.14) 0.0%, oklch(82.18% 0.1238 197.53) 11.1%, oklch(79.67% 0.1117 207.99) 22.2%, oklch(75.46% 0.1240 217.83) 33.3%, oklch(71.23% 0.1389 228.50) 44.4%, oklch(67.32% 0.1530 240.16) 55.6%, oklch(63.27% 0.1720 248.41) 66.7%, oklch(59.31% 0.1904 254.25) 77.8%, oklch(56.48% 0.2144 263.80) 88.9%, oklch(54.72% 0.2274 272.62) 100.0%);
+    color: transparent;
+    -webkit-background-clip: text;
+    margin-right: min(20vw, 40vw)
+} 
+
+.header ul a {
+    font-weight: 600;
+}
+
+.header ul li:not(.logo) a:hover {
+    color: #00A7D6;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg in oklch, oklch(86.77% 0.0992 248.20) 0.0%, oklch(88.65% 0.0931 236.68) 25.0%, oklch(90.12% 0.0768 241.59) 50.0%, oklch(90.67% 0.0649 267.31) 75.0%, oklch(90.35% 0.0799 306.32) 100.0%);
+    height: calc(100vh - 83px);
+    text-align: center;
+}
+
+.main-content-child {
+    width: 50vw;
+    animation: Up 0.8s ease-out forwards;
+}
+
+@keyframes Up {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+h1 {
+    margin: 30px;
+    font-size: clamp(3.1rem, 6.5vw, 6rem);
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #023e8a;
+}
+
+.main-content p:first-child {
+    display: inline-block;
+    padding: 8px 12px;
+    color: #1f5dad;
+    font-weight: 700;
+    border: #1f5dad solid 2px;
+    border-radius: 999px;
+}
+
+.main-content p:last-child {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.main-videos {
+    margin: 80px 0;
+}
+
+.main-videos h2 {
+    position: relative;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.main-videos h2::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 4px;
+    background: #00A7D6;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    border-radius: 999px;
+}
+
+.main-videos .main-video-parent {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-videos .main-video-parent .main-videos-child {
+    width: 45%;
+    border: #ebe6e6 solid 0.5px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.main-videos .main-video-parent .main-videos-child:hover {
+    transform: translateY(-15px);
+}
+
+.main-videos .main-video-parent video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.main-videos-child h3 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: #023e8a;
+    margin: 20px 0;
+    margin-left: 30px;
+}
+
+.main-videos-child p {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+footer .content-child {
+    display: grid;
+    background: #023e8a;
+    row-gap: 40px;
+    color: #ebe6e6;
+    text-align: center;
+    padding: 50px 20px 0 0;
+}
+
+footer .content-child p:first-child {
+    font-family: "Playfair Display", serif;
+    font-size: clamp(2.8rem, 6vw, 4rem);
+    font-weight: 500;
+}
+
+footer .content-child p:last-child {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+    color: rgb(190, 182, 182);
+    width: 50%;
+    margin: 0 auto;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.2);;
+    padding: 40px;
+
+}

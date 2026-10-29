@@ -1,0 +1,153 @@
+/*PC */
+@media screen and (min-width: 992px) {
+    .menu-mobile {
+        display: none;
+    }
+
+    .menu-content-drawer {
+        display: none;
+    }
+    }
+
+
+/* Tablet & Mobile */
+@media screen and (max-width: 991px) {
+    .header {
+        position: relative;
+    }
+
+     .header .container {
+        height: 43px;
+    }
+
+    .header .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .logo a {
+        margin-right: 0;
+    }
+
+    .header ul li:not(.logo):not(.menu-mobile) {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    .header ul {
+        height: 100%;
+    }   
+
+    .menu-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.2s ease;
+    }
+
+    .menu-content-drawer {
+        position: fixed;
+        inset: 0 40% 0 0;
+        background: #fff;
+        z-index: 10;
+        transform: translateX(-100%);
+        transition: all 0.4s ease;
+    }
+
+    .menu-checkbox:checked ~ .menu-overlay {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu-checkbox:checked ~ .menu-content-drawer {
+        transform: translateX(-0%)
+    }
+
+    .menu-content-drawer li:not(.logo) a:hover {
+        color: #00A7D6;
+    }
+
+
+
+    .main-videos .main-video-parent {
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .main-videos .main-video-parent .main-videos-child {
+        width: 100%;
+    }
+
+    footer .content-child p:last-child {
+        width: 66%;
+    }
+
+}
+
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .main-content-child {
+        width: 80vw;
+    }
+
+    .toggle-menu i {
+            font-size: 26px;
+            color: #666;
+        }
+
+    .menu-content-drawer .fa-x {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .menu-content-drawer a {
+        display: block;
+        padding: 20px 0 20px 80px;
+        font-weight: 600;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+    .main-content-child {
+        width: 100vw;
+    }
+
+    .toggle-menu i {
+            font-size: 20px;
+            color: #666;
+        }       
+
+    .menu-content-drawer .fa-x {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 18px;
+        cursor: pointer;
+    } 
+
+    .menu-content-drawer a {
+        display: block;
+        padding: 23px 0 10px 33px;
+        font-weight: 600;
+    }
+    
+    .logo a {
+            font-size: 3.2rem;
+        }   
+
+}
