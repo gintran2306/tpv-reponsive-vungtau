@@ -76,6 +76,12 @@ h1, h2, h3 {
     animation: Up 0.8s ease-out forwards;
 }
 
+.intro-hero,
+.places-hero,
+.contact-hero {
+    animation: Up 0.8s ease-out forwards;
+}
+
 @keyframes Up {
     from {
         opacity: 0;

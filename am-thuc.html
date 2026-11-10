@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/tailwind-output.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon-Vungtau.png">
+    <title>Ẩm thực Vũng Tàu</title>
+</head>
+<body>
+    <!-- Table/Moblie header -->
+    <header class="mobile-header">
+        <input  type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+        <label for="menu-checkbox" class="menu-overlay"></label>
+        <div class="menu-content-drawer">
+                <ul>
+                    <li class="logo"><a href="./index.html">Vũng Tàu</a></li>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="./dia-diem.html" >Địa điểm</a></li>
+                    <li><a href="./am-thuc.html" class="text-[#00A7D6]">Ẩm thực</a></li>
+                    <li><a href="./lien-he.html">Liên hệ</a></li>
+                    <li><label for="menu-checkbox"><i class="fa-solid fa-x"></i></label></li>
+                </ul>
+        </div>
+    </header>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li class="logo"><a href="./index.html">Vũng Tàu</a></li>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="./dia-diem.html">Địa điểm</a></li>
+                <li><a href="./am-thuc.html" class="text-[#00A7D6]">Ẩm thực</a></li>
+                <li><a href="./lien-he.html">Liên hệ</a></li>
+
+                <!-- Tablet & Mobile -->
+                    
+                <li class="menu-mobile">
+                    <label for="menu-checkbox" class="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="bg-[linear-gradient(45deg_in_oklch,oklch(86.77%_0.0992_248.20)_0%,oklch(88.65%_0.0931_236.68)_25%,oklch(90.12%_0.0768_241.59)_50%,oklch(90.67%_0.0649_267.31)_75%,oklch(90.35%_0.0799_306.32)_100%)] h-[calc(100vh-83px)] flex flex-col justify-center items-center">
+            <div class="max-w-[45vw] places-hero">
+                <h1 class="text-[clamp(3.1rem,6.5vw,6rem)] font-[700] tracking-[-0.5px] text-center">Thiên Đường Ẩm Thực Biển</h1>
+                <p class="text-center">Thưởng thức những món ăn đặc sản tinh túy nhất của thành phố biển Vũng Tàu.</p>
+            </div>
+        </section>
+        <section class="bg-[#F8FBFF] p-[40px] my-[30px]">
+            <div class="grid grid-cols-3 gap-[50px] w-full max-w-[1280px] mx-auto places-cards">
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/laucaduoi.png" alt="Lẩu Cá Đuối">
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">1. Lẩu Cá Đuối</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Món ăn biểu tượng với thịt cá đuối tươi ngon và nước dùng chua măng đặc trưng.</p>
+                </div>
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/banhkepbonglan.png" alt="Bánh Kẹp - Bông Lan">
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">2. Bánh Kẹp - Bông Lan</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Thơm lừng mùi bơ sữa và béo ngậy vị trứng muối từ lò bánh Gốc Cột Điện.</p>
+                </div>
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/banhkhotbatam.png" alt="ánh Khọt Bà Tám">
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">3. Bánh Khọt Bà Tám</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Bãi biển hoang sơ với những khối đá tự nhiên mang vẻ đẹp mộc mạc.</p>
+                </div>
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/banhcanhlonghuong.png" alt="Bánh Canh Long Hương">
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">4. Bánh Canh Long Hương</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Mũi đất đón gió quanh năm, nơi sở hữu "Cổng trời" nổi tiếng.</p>
+                </div>
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/banhmisiumai.png" alt="Bánh Mì Chảo Xíu Mại">
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">5. Bánh Mì Chảo Xíu Mại</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Biểu tượng lịch sử cao nhất vùng, điểm ngắm toàn cảnh thành phố.</p>
+                </div>
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/kembosaurieng.png" alt="Kem Bơ Sầu Riêng"> 
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">6. Kem Bơ Sầu Riêng</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Ngọn núi xanh mướt ôm trọn một phần thành phố biển xinh đẹp.</p>
+                </div>
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/khoaitay.png" alt="Khoai Tây Dài Phủ Xốt">
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">7. Khoai Tây Dài Phủ Xốt</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Dinh thự trắng phong cách Pháp cổ điển, lưu giữ nhiều hiện vật giá trị.</p>
+                </div>
+                <div class="bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] transition-all duration-300 hover:-translate-y-[10px] hover:shadow-2xl relative">
+                    <img class="w-full h-[325px] object-cover" src="assets/img/banhcanhghe.png" alt="Bánh Canh Ghẹ">
+                    <h2 class="text-[30px] font-bold text-[#023E8A] mt-[35px] mb-[20px] px-[40px]">8. Bánh Canh Ghẹ</h2>
+                    <p class="text-[18px] text-[#4B5563] leading-[1.8] px-[40px] pb-[40px]">Bãi biển yên tĩnh, lý tưởng cho những ai tìm kiếm sự thư thái.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-[#023E8A] p-[50px] mt-[40px] places-footer">
+    <p class="text-center font-['Playfair_Display'] text-[#fff] text-[clamp(2.5rem,5vw,4rem)] font-[700] tracking-[0.5px] my-[25px]">Vũng Tàu</p>
+    <p class="text-[#fff] text-center text-[14px]">© 2026 Vũng Tàu Travel. Crafted by Mai Hải Bình.</p>
+</footer>
+</body>
+</html>

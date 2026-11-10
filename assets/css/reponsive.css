@@ -7,10 +7,16 @@
     .menu-content-drawer {
         display: none;
     }
+
+    .logo a {
+        white-space: nowrap;
+    }
     }
 
 
 /* Tablet & Mobile */
+
+/* Trang chủ */
 @media screen and (max-width: 991px) {
     .header {
         position: relative;
@@ -92,8 +98,29 @@
         width: 66%;
     }
 
+    /* Trang giới thiệu */
+
+    .intro-overview {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .intro-overview > div {
+        width: 100%;
+        flex: none;
+    }
+
+    .intro-cards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
 }
 
+
+
+
+/* ---------------------------------------- */
 
 /* Tablet */
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -119,7 +146,82 @@
         font-weight: 600;
     }
 
-}
+    .logo a {
+        white-space: nowrap;
+    }
+
+    /* Trang giới thiệu */
+
+     .intro-hero {
+        max-width: 80vw;
+    }
+
+
+    .intro-stats {
+        width: 80vw;
+        gap: 20px;
+    }
+
+    .intro-footer {
+        padding: 35px;
+    }
+    
+    /* Trang Địa điểm */
+
+    .places-hero {
+        max-width: 80vw;
+    }
+
+    .places-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+        .places-cards img {
+        height: 250px;
+    }
+
+    .places-cards h2 {
+        font-size: 24px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .places-cards p {
+        font-size: 16px;
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+    .places-footer {
+        padding: 35px;
+    }
+
+    /* Trang liên hệ */
+
+    .contact-card {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .contact-avatar {
+        width: 80%;
+        margin: 0;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 20px;
+    }
+
+    /* Trang liên hệ */
+
+    .contact-hero {
+        max-width: 80vw;
+    }
+
+    }
 
 /* Mobile */
 @media screen and (max-width: 767px) {
@@ -147,7 +249,93 @@
     }
     
     .logo a {
-            font-size: 3.2rem;
-        }   
+        font-size: 3.2rem;
+    }
 
+    /* Trang giới thiệu */
+
+     .intro-hero {
+        max-width: 95vw;
+    }
+
+
+    .intro-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .intro-stats {
+        width: 95vw;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .intro-footer {
+        padding: 25px 15px;
+    }
+
+    /* Trang địa điểm */
+
+    .places-hero {
+        max-width: 90vw;
+    }
+
+    .places-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .places-cards img {
+        height: 220px;
+    }
+
+    .places-cards h2 {
+        font-size: 24px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .places-cards p {
+        font-size: 16px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .places-footer {
+        padding: 25px 15px;
+    }
+
+    /* Trang liên hệ */
+
+    .contact-details {
+        grid-template-columns: 120px minmax(0, 1fr);
+        column-gap: 10px;
+        row-gap: 15px;
+    }
+
+    .contact-avatar {
+        width: 100%;
+        margin: 0;
+    }
+
+    .contact-info {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .contact-hero {
+        max-width: 95vw;
+    }
+
+    .contact-name {
+        font-size: 30px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .contact-card {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
 }

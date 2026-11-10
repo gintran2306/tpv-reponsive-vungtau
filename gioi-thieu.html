@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/tailwind-output.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon-Vungtau.png">
+    <title>Giới thiệu về Vũng Tàu</title>
+</head>
+<body>
+    <!-- Table/Moblie header -->
+    <header class="mobile-header">
+        <input  type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+        <label for="menu-checkbox" class="menu-overlay"></label>
+        <div class="menu-content-drawer">
+                <ul>
+                    <li class="logo"><a href="./index.html">Vũng Tàu</a></li>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./gioi-thieu.html" class="text-[#00A7D6]">Giới thiệu</a></li>
+                    <li><a href="./dia-diem.html">Địa điểm</a></li>
+                    <li><a href="./am-thuc.html">Ẩm thực</a></li>
+                    <li><a href="./lien-he.html">Liên hệ</a></li>
+                    <li><label for="menu-checkbox"><i class="fa-solid fa-x"></i></label></li>
+                </ul>
+        </div>
+    </header>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li class="logo"><a href="./index.html">Vũng Tàu</a></li>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./gioi-thieu.html" class="text-[#00A7D6]">Giới thiệu</a></li>
+                <li><a href="./dia-diem.html">Địa điểm</a></li>
+                <li><a href="./am-thuc.html">Ẩm thực</a></li>
+                <li><a href="./lien-he.html">Liên hệ</a></li>
+
+                <!-- Tablet & Mobile -->
+                    
+                <li class="menu-mobile">
+                    <label for="menu-checkbox" class="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="bg-[linear-gradient(45deg_in_oklch,oklch(86.77%_0.0992_248.20)_0%,oklch(88.65%_0.0931_236.68)_25%,oklch(90.12%_0.0768_241.59)_50%,oklch(90.67%_0.0649_267.31)_75%,oklch(90.35%_0.0799_306.32)_100%)] h-[calc(100vh-83px)] flex flex-col justify-center items-center">
+            <div class="max-w-[50vw] intro-hero">
+                <h1 class="text-[clamp(3.1rem,6.5vw,6rem)] font-[700] tracking-[-0.5px] text-center">Khám Phá Tâm Điểm Du Lịch Miền Nam</h1>
+                <p class="text-center">Tìm hiểu về lịch sử lâu đời, khí hậu ôn hòa và những nét văn hóa đặc trưng của thành phố biển.</p>
+            </div>
+        </section>
+        <section class="bg-[#F8FBFF] py-[60px]">
+            <div class="bg-[#FFFFFF] w-[80vw] flex justify-center items-center mx-[auto] border-[0.5px] border-solid border-[#ebe6e6] p-[20px] rounded-[25px] shadow-[0_2px_3px_1px_rgba(0,0,0,0.2)] intro-overview">
+                <div class="flex-1 min-w-0 p-[15px]">
+                    <div>
+                        <p class=" inline-block my-[25px] py-[12px] px-[20px] bg-[#FFD166] rounded-[999px] text-[#3c6477] font-[700]">Tổng quan</p>
+                    </div>
+                    <div>
+                        <h2 class="font-['Playfair_Display'] text-[clamp(2.5rem,5vw,4rem)] font-[700] text-[#023e8a] tracking-[0.5px] my-[25px]">Vũng Tàu - Thành phố Biển xanh</h2>
+                        <p class="my-[25px]">Cách TP. Hồ Chí Minh chỉ khoảng 100km, Vũng Tàu không chỉ là trung tâm kinh tế quan trọng mà còn là điểm đến nghỉ dưỡng hàng đầu khu vực phía Nam.</p>
+                        <p>Với đường bờ biển dài 20km cùng địa thế "tựa sơn hướng thủy", thành phố mang trong mình vẻ đẹp giao thoa giữa nét hiện đại và sự bình yên của thiên nhiên.</p>
+                    </div>
+                </div>
+                <div class="flex-1 min-w-0 border-[0.5px] border-solid border-[#ebe6e6] p-[20px] rounded-[25px] shadow-[0_2px_3px_1px_rgba(0,0,0,0.2)]">
+                    <video src="assets/video/gioi-thieu-vung-tau.mp4" controls class="block w-full aspect-video object-cover rounded-[15px] "></video>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 gap-[30px] w-[80vw] mx-auto my-[80px] intro-cards">
+                <div class="p-[40px] border-[0.5px] border-solid border-[#ebe6e6] rounded-[25px] shadow-[0_2px_3px_1px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:-translate-y-[10px]">
+                    <div class="text-[40px]">📜</div>
+                    <h3 class="my-[20px] font-['Playfair_Display'] text-[clamp(2rem,4vw,3rem)] text-[#023e8a] font-[700]">Lịch Sử & Tên Gọi</h3>
+                    <p>Thời Pháp thuộc, nơi đây được gọi là Cap Saint-Jacques. Tên gọi "Vũng Tàu" xuất phát từ việc nơi đây có vùng biển kín gió, nơi các con tàu buôn thường xuyên trú đậu.</p>
+                    <p class="my-[20px]">Trải qua nhiều thăng trầm lịch sử, Vũng Tàu vẫn giữ vững vị thế là cửa ngõ quan trọng ra Biển Đông.</p>
+                </div>
+                <div class="p-[40px] border-[0.5px] border-solid border-[#ebe6e6] rounded-[25px] shadow-[0_2px_3px_1px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:-translate-y-[10px]">
+                    <div class="text-[40px]">☀️</div>
+                    <h3 class="my-[20px] font-['Playfair_Display'] text-[clamp(2rem,4vw,3rem)] text-[#023e8a] font-[700]">Khí Hậu & Thời Điểm</h3>
+                    <p>Nhiệt độ trung bình 27°C, khí hậu ôn hòa quanh năm. Vũng Tàu có hai mùa rõ rệt: mùa khô (tháng 11 - tháng 4) và mùa mưa (tháng 5 - tháng 10).</p>
+                    <p class="my-[20px]"><span>Tip: </span>Thời điểm đẹp nhất để ghé thăm là mùa khô, khi nắng vàng rực rỡ và biển êm ả nhất.</p>
+                </div>
+                <div class="p-[40px] border-[0.5px] border-solid border-[#ebe6e6] rounded-[25px] shadow-[0_2px_3px_1px_rgba(0,0,0,0.2)] transition-transform duration-500 hover:-translate-y-[10px]">
+                    <div class="text-[40px]">🎭</div>
+                    <h3 class="my-[20px] font-['Playfair_Display'] text-[clamp(2rem,4vw,3rem)] text-[#023e8a] font-[700]">Lễ Hội Đặc Sắc</h3>
+                    <p>Mang đậm nét văn hóa biển, nổi bật nhất là <span>Lễ hội Nghinh Ông</span> (tháng 8 âm lịch) tại đình Thắng Tam và <span>Lễ hội Dinh Cô</span> (tháng 2 âm lịch).</p>
+                </div>
+            </div>
+            <div>
+                <p class="text-center font-['Playfair_Display'] text-[clamp(2.5rem,5vw,4rem)] font-[700] tracking-[0.5px] my-[25px] 
+                relative
+                after:content-['']
+                after:absolute
+                after:w-[70px]
+                after:h-[4px]
+                after:bg-[#00A7D6]
+                after:left-1/2
+                after:-translate-x-1/2
+                after:bottom-[-25px]
+                after:rounded-full">Bạn Có Biết?</p>
+                <div class="grid grid-cols-3 gap-[30px] w-[60vw] mx-auto my-[80px] intro-stats">
+                    <div>
+                        <div class="font-['Playfair_Display'] text-[#145cb9] text-[clamp(2.5rem,5vw,4rem)] font-[700] text-center">20km</div>
+                        <p class="text-[16px] text-center mt-[10px]">Đường bờ biển trải dài</p>
+                    </div>
+                     <div>
+                        <div class="font-['Playfair_Display'] text-[#145cb9] text-[clamp(2.5rem,5vw,4rem)] font-[700] text-center">28°C</div>
+                        <p class="text-[16px] text-center mt-[10px]">Nhiệt độ trung bình lý tưởng</p>
+                    </div>
+                     <div>
+                        <div class="font-['Playfair_Display'] text-[#145cb9] text-[clamp(2.5rem,5vw,4rem)] font-[700] text-center">100km</div>
+                        <p class="text-[16px] text-center mt-[10px]">Cách TP.HCM chỉ 2 giờ đi xe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-[#023E8A] p-[50px] intro-footer">
+    <p class="text-center font-['Playfair_Display'] text-[#fff] text-[clamp(2.5rem,5vw,4rem)] font-[700] tracking-[0.5px] my-[25px]">Vũng Tàu</p>
+    <p class="text-[#fff] text-center text-[14px]">© 2026 Vũng Tàu Travel. Crafted by Mai Hải Bình.</p>
+</footer>
+</body>
+</html>

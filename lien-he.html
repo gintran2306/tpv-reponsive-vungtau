@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/tailwind-output.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="icon" type="image/png" href="./assets/img/favicon-Vungtau.png">
+    <title>Liên hệ - Tác giả</title>
+</head>
+<body>
+    <!-- Table/Moblie header -->
+    <header class="mobile-header">
+        <input  type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+        <label for="menu-checkbox" class="menu-overlay"></label>
+        <div class="menu-content-drawer">
+                <ul>
+                    <li class="logo"><a href="./index.html">Vũng Tàu</a></li>
+                    <li><a href="./index.html">Trang chủ</a></li>
+                    <li><a href="./gioi-thieu.html">Giới thiệu</a></li>
+                    <li><a href="./dia-diem.html" >Địa điểm</a></li>
+                    <li><a href="./am-thuc.html" >Ẩm thực</a></li>
+                    <li><a href="./lien-he.html" class="text-[#00A7D6]">Liên hệ</a></li>
+                    <li><label for="menu-checkbox"><i class="fa-solid fa-x"></i></label></li>
+                </ul>
+        </div>
+    </header>
+    <header class="header">
+        <div class="container">
+            <ul>
+                <li class="logo"><a href="./index.html">Vũng Tàu</a></li>
+                <li><a href="./index.html">Trang chủ</a></li>
+                <li><a href="./gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="./dia-diem.html">Địa điểm</a></li>
+                <li><a href="./am-thuc.html" >Ẩm thực</a></li>
+                <li><a href="./lien-he.html" class="text-[#00A7D6]">Liên hệ</a></li>
+
+                <!-- Tablet & Mobile -->
+                    
+                <li class="menu-mobile">
+                    <label for="menu-checkbox" class="toggle-menu"><i class="fa-solid fa-bars"></i></label>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="bg-[linear-gradient(45deg_in_oklch,oklch(86.77%_0.0992_248.20)_0%,oklch(88.65%_0.0931_236.68)_25%,oklch(90.12%_0.0768_241.59)_50%,oklch(90.67%_0.0649_267.31)_75%,oklch(90.35%_0.0799_306.32)_100%)] h-[calc(100vh-83px)] flex flex-col justify-center items-center">
+            <div class="max-w-[45vw] contact-hero">
+                <h1 class="text-[clamp(3.1rem,6.5vw,6rem)] font-[700] tracking-[-0.5px] text-center">Thông Tin<br>Tác Giả</h1>
+                <p class="text-center">Người thực hiện dự án quảng bá du lịch thành phố biển Vũng Tàu.</p>
+            </div>
+        </section>
+        <section class="bg-[#F8FBFF] p-[40px] my-[30px]">
+            <div class="flex justify-center items-center gap-[50px] max-w-[1280px] mx-auto bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] contact-card">
+                <div class="w-[35%] shrink-0 bg-white rounded-[30px] overflow-hidden shadow-lg border border-[#e5e7eb] m-[40px] contact-avatar">
+                    <img class="w-full object-cover" src="assets/img/avatar.png" alt="Mai Hải Bình">
+                </div>
+                <div class="flex-1 contact-info">
+                    <p class=" inline-block my-[25px] py-[12px] px-[20px] bg-[#FFD166] rounded-[999px] text-[#3c6477] font-[700]">Frontend Developer</p>
+                    <h2 class="text-[50px] font-bold text-[#023E8A] mt-[35px] mb-[20px] contact-name">Mai Hải Bình</h2>
+                    <div class="grid grid-cols-[180px_1fr] gap-y-[25px] contact-details">
+                        <span class="font-bold text-[#023E8A]">Chuyên ngành:</span>
+                        <p>Thương mại điện tử</p>
+                        <span class="font-bold text-[#023E8A]">Trường học:</span>
+                        <p>Cao Đẳng Kinh Tế Đối Ngoại</p>
+                        <span class="font-bold text-[#023E8A]">Lớp:</span>
+                        <p>CĐTMĐT28A CLC</p>
+                        <span class="font-bold text-[#023E8A]">MSSV:</span>
+                        <p>2400359</p>
+                    </div>
+                    <div class="border-t border-[#e5e7eb] max-w-[600px] pt-[30px] mt-[30px]">
+                        Tôi rất đam mê du lịch. Website này là sản phẩm nhằm giới thiệu vẻ đẹp của Vũng Tàu đến với mọi người.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<footer class="bg-[#023E8A] p-[50px] mt-[40px] places-footer">
+    <p class="text-center font-['Playfair_Display'] text-[#fff] text-[clamp(2.5rem,5vw,4rem)] font-[700] tracking-[0.5px] my-[25px]">Vũng Tàu</p>
+    <p class="text-[#fff] text-center text-[14px]">Hẹn gặp lại bạn tại thành phố biển xinh đẹp!</p>
+    <p class="text-[#fff] text-center text-[14px] border-t border-[#e5e7eb30] max-w-[600px] pt-[30px] mt-[30px] mx-auto">© 2026 Vũng Tàu Travel. Crafted by Mai Hải Bình.</p>
+</footer>
+</body>
+</html>
